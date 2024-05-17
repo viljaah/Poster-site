@@ -1,0 +1,210 @@
+
+//https://www.w3schools.com/css/css3_fonts.asp
+@font-face{
+    font-family: Caveat;
+    src: url(font/Caveat-Regualar.ttf);
+}
+
+body {
+    font-family: Caveat;
+    font-size: 20px;
+}
+
+#miljo {
+    color: green;
+}
+.heading {
+    font-family: sans-serif;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 50%;
+    &__first{
+    margin-top: 10%;
+    color: #005BA7;
+    }
+    &__second {
+        font-family: Caveat;
+    }
+}
+
+.single__paragraph{
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 45%;
+    margin-top: 40%;
+    color: white;
+}
+
+/*CSS animation, lecture week 12 (lefty) page 67+68*/
+@keyframes moveMoon {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(100px);}
+    100% {transform: translateY(0);}
+    }
+    .moon {
+    animation: moveMoon 5s infinite ease-in-out;
+    }
+    path {
+    animation: moveAlongPath 4s infinite alternate;
+    }
+
+    /*The small earth patch*/
+    .container{
+        position: relative;
+    
+        /*css drawing*/
+        &__earth{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 100% 45% 62% 58% / 67% 98% 76% 36% ;
+        background-color: #A1CF6D;
+        border: 2px solid black;
+        top: 78%;
+        left: 45%;
+    }
+    }
+
+/*Colors*/
+.colZero{
+    opacity:0.38;
+    fill:#C77161;
+}
+
+.colOne{
+    fill:#00B1DC;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+
+.colTwo{
+    stroke:#000000;
+    stroke-miterlimit:10;
+}
+
+.colThree{
+    fill:#FFFFFF;
+    stroke:#000000;
+    stroke-miterlimit:10;
+}
+
+.colFour{
+    fill:#A1CF6D;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+
+.colFive{
+    fill:none;
+    stroke:#000000;
+    stroke-miterlimit:10;
+}
+
+.colSix{
+    opacity:0.15;
+    fill:#00B1DC;
+}
+
+.colSeven{
+    fill:#005BA7;
+}
+
+.colEight{
+    fill:#FFFFFF;
+}
+
+.colNine{
+    fill:#816C5D;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+
+.colTen{
+    fill:#F5EC43;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;}
+
+.colEleven{
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+
+.colTwelve{
+    fill:none;
+    stroke:#FFFFFF;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+
+.colThirteen{
+    fill:#FCE0CE;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+
+.colFourteen{
+    fill:#00B1DC;
+}
+
+.colFifteen{
+    fill:#C77161;
+}
+
+.colSixteen{
+    fill:#AD9282;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+
+.colSeventeen{
+    fill:#B6A69E;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+
+.colEighteen{
+    fill:#A1CF6D;
+}
+
+.colNineteen{
+    fill:#FFFFFF;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+
+.colTwenty{
+    fill:none;
+}
+
+.colTwenty-one{
+    fill:#EAEAE9;
+    stroke:#000000;
+    stroke-width:4.206;
+    stroke-miterlimit:10;
+}
+
+.colTwenty-two{
+    fill:#B4B6B7;
+    stroke:#000000;
+    stroke-width:4.6017;
+    stroke-miterlimit:10;
+}
+
+.colTwenty-three{
+    fill:#C77161;
+}
+
+.colTwenty-four{
+    stroke:#000000;
+    stroke-width:4.206;
+    stroke-miterlimit:10;
+}
