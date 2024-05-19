@@ -7,58 +7,33 @@ body {
   font-size: 20px;
 }
 
-h2 {
-  font-size: 60px;
-  position: absolute;
-  margin-top: 110%;
-  margin-left: 40%;
-}
-
-#miljo {
+.miljo {
   color: green;
 }
 
 .heading {
   font-family: sans-serif;
   position: absolute;
-  margin-left: 5%;
-  margin-right: 50%;
+  margin-left: 5vw;
+  margin-right: 50vw;
 }
 .heading__first {
-  margin-top: 10%;
-  color: #005BA7;
-  margin-bottom: 0;
+  margin-top: 5vw;
+  color: #005ba7;
+  font-size: 5vw;
 }
 .heading__second {
   font-family: Caveat;
+  font-size: 2.5vw;
 }
 
 .single__paragraph {
   position: absolute;
   margin-left: 5%;
   margin-right: 45%;
-  margin-top: 40%;
+  margin-top: 34%;
   color: white;
-}
-
-/*CSS animation, lecture week 12 (lefty) page 67+68*/
-@keyframes moveMoon {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.moon {
-  animation: moveMoon 5s infinite ease-in-out;
-}
-
-path {
-  animation: moveAlongPath 4s infinite alternate;
+  font-size: 2.5vw;
 }
 
 /*The small earth patch*/
@@ -66,129 +41,48 @@ path {
   position: relative;
   /*css drawing*/
 }
-.container__earth {
+.container__text {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 15vw;
+  height: 15vw;
   border-radius: 100% 45% 62% 58%/67% 98% 76% 36%;
-  background-color: #A1CF6D;
+  background-color: #a1cf6d;
   border: 2px solid black;
-  top: 78%;
+  top: 80%;
   left: 45%;
+}
+.container__mail {
+  font-size: 2.5vw;
+  margin-left: 1.5vw;
+}
+
+/*CSS animation, lecture week 12 (lefty) page 67+68*/
+@keyframes moveMoon {
+  0% {
+    transform: translateY(-3vw);
+  }
+  50% {
+    transform: translateY(7vw);
+  }
+  100% {
+    transform: translateY(-3vw);
+  }
+}
+.moon {
+  animation: moveMoon 5s infinite ease-in-out;
 }
 
 /*Colors*/
-.colZero {
-  opacity: 0.38;
-  fill: #C77161;
-}
-
-.colOne {
-  fill: #00B1DC;
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-.colTwo {
-  stroke: #000000;
-  stroke-miterlimit: 10;
-}
-
-.colThree {
-  fill: #FFFFFF;
-  stroke: #000000;
-  stroke-miterlimit: 10;
-}
-
-.colFour {
-  fill: #A1CF6D;
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-.colFive {
-  fill: none;
-  stroke: #000000;
-  stroke-miterlimit: 10;
-}
-
-.colSix {
-  opacity: 0.15;
-  fill: #00B1DC;
-}
-
 .colSeven {
-  fill: #005BA7;
+  fill: #005ba7;
 }
 
 .colEight {
-  fill: #FFFFFF;
-}
-
-.colNine {
-  fill: #816C5D;
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
+  fill: #ffffff;
 }
 
 .colTen {
-  fill: #F5EC43;
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-.colEleven {
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-.colTwelve {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-.colThirteen {
-  fill: #FCE0CE;
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-.colFourteen {
-  fill: #00B1DC;
-}
-
-.colFifteen {
-  fill: #C77161;
-}
-
-.colSixteen {
-  fill: #AD9282;
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-.colSeventeen {
-  fill: #B6A69E;
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-.colEighteen {
-  fill: #A1CF6D;
-}
-
-.colNineteen {
-  fill: #FFFFFF;
+  fill: #f5ec43;
   stroke: #000000;
   stroke-width: 2;
   stroke-miterlimit: 10;
@@ -198,26 +92,90 @@ path {
   fill: none;
 }
 
-.colTwenty-one {
-  fill: #EAEAE9;
-  stroke: #000000;
-  stroke-width: 4.206;
-  stroke-miterlimit: 10;
-}
-
-.colTwenty-two {
-  fill: #B4B6B7;
-  stroke: #000000;
-  stroke-width: 4.6017;
-  stroke-miterlimit: 10;
-}
-
 .colTwenty-three {
-  fill: #C77161;
+  fill: #c77161;
 }
 
 .colTwenty-four {
   stroke: #000000;
   stroke-width: 4.206;
   stroke-miterlimit: 10;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.background img {
+  position: absolute;
+}
+.background__red {
+  z-index: -10;
+}
+.background__lightblue {
+  z-index: -9;
+}
+.background__blue {
+  z-index: -8;
+}
+.background__white {
+  z-index: -7;
+}
+
+.earth {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.earth img {
+  position: absolute;
+}
+.earth__item1 {
+  z-index: -6;
+}
+.earth__item2 {
+  z-index: -5;
+}
+.earth__item3 {
+  z-index: -4;
+}
+.earth__item4 {
+  z-index: -3;
+}
+.earth__item5 {
+  z-index: -2;
+}
+.earth__item6 {
+  z-index: -1;
+}
+
+.kids {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.kids img {
+  position: absolute;
+}
+
+.moon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.moon img {
+  position: absolute;
+}
+
+.logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.logo img {
+  position: absolute;
+}
+.logo__ntnu {
+  margin-top: 2vw;
 }/*# sourceMappingURL=style.css.map */

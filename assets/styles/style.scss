@@ -1,210 +1,183 @@
-
 //https://www.w3schools.com/css/css3_fonts.asp
-@font-face{
-    font-family: Caveat;
-    src: url(font/Caveat-Regualar.ttf);
+@font-face {
+  font-family: Caveat;
+  src: url(font/Caveat-Regualar.ttf);
 }
 
 body {
-    font-family: Caveat;
-    font-size: 20px;
+  font-family: Caveat;
+  font-size: 20px;
 }
 
-#miljo {
-    color: green;
+.miljo {
+  color: green;
 }
 .heading {
-    font-family: sans-serif;
-    position: absolute;
-    margin-left: 5%;
-    margin-right: 50%;
-    &__first{
-    margin-top: 10%;
-    color: #005BA7;
-    }
-    &__second {
-        font-family: Caveat;
-    }
+  font-family: sans-serif;
+  position: absolute;
+  margin-left: 5vw;
+  margin-right: 50vw;
+  &__first {
+    margin-top: 5vw;
+    color: #005ba7;
+    font-size: 5vw;
+  }
+  &__second {
+    font-family: Caveat;
+    font-size: 2.5vw;
+  }
 }
 
-.single__paragraph{
+.single__paragraph {
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 45%;
+  margin-top: 34%;
+  color: white;
+  font-size: 2.5vw;
+}
+
+/*The small earth patch*/
+.container {
+  position: relative;
+
+  /*css drawing*/
+  &__text {
     position: absolute;
-    margin-left: 5%;
-    margin-right: 45%;
-    margin-top: 40%;
-    color: white;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 100% 45% 62% 58% / 67% 98% 76% 36%;
+    background-color: #a1cf6d;
+    border: 2px solid black;
+    top: 80%;
+    left: 45%;
+  }
+  &__mail {
+    font-size: 2.5vw;
+    margin-left: 1.5vw;
+  }
 }
 
 /*CSS animation, lecture week 12 (lefty) page 67+68*/
 @keyframes moveMoon {
-    0% {transform: translateY(0);}
-    50% {transform: translateY(100px);}
-    100% {transform: translateY(0);}
-    }
-    .moon {
-    animation: moveMoon 5s infinite ease-in-out;
-    }
-    path {
-    animation: moveAlongPath 4s infinite alternate;
-    }
-
-    /*The small earth patch*/
-    .container{
-        position: relative;
-    
-        /*css drawing*/
-        &__earth{
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        border-radius: 100% 45% 62% 58% / 67% 98% 76% 36% ;
-        background-color: #A1CF6D;
-        border: 2px solid black;
-        top: 78%;
-        left: 45%;
-    }
-    }
+  0% {
+    transform: translateY(-3vw);
+  }
+  50% {
+    transform: translateY(7vw);
+  }
+  100% {
+    transform: translateY(-3vw);
+  }
+}
+.moon {
+  animation: moveMoon 5s infinite ease-in-out;
+}
 
 /*Colors*/
-.colZero{
-    opacity:0.38;
-    fill:#C77161;
+.colSeven {
+  fill: #005ba7;
+}
+.colEight {
+  fill: #ffffff;
+}
+.colTen {
+  fill: #f5ec43;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+.colTwenty {
+  fill: none;
+}
+.colTwenty-three {
+  fill: #c77161;
+}
+.colTwenty-four {
+  stroke: #000000;
+  stroke-width: 4.206;
+  stroke-miterlimit: 10;
 }
 
-.colOne{
-    fill:#00B1DC;
-    stroke:#000000;
-    stroke-width:2;
-    stroke-miterlimit:10;
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  & img {
+    position: absolute;
+  }
+  &__red {
+    z-index: -10;
+  }
+  &__lightblue {
+    z-index: -9;
+  }
+  &__blue {
+    z-index: -8;
+  }
+  &__white {
+    z-index: -7;
+  }
 }
 
-.colTwo{
-    stroke:#000000;
-    stroke-miterlimit:10;
+.earth {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  & img {
+    position: absolute;
+  }
+  &__item1 {
+    z-index: -6;
+  }
+  &__item2 {
+    z-index: -5;
+  }
+  &__item3 {
+    z-index: -4;
+  }
+  &__item4 {
+    z-index: -3;
+  }
+  &__item5 {
+    z-index: -2;
+  }
+  &__item6 {
+    z-index: -1;
+  }
 }
 
-.colThree{
-    fill:#FFFFFF;
-    stroke:#000000;
-    stroke-miterlimit:10;
+.kids {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  & img {
+    position: absolute;
+  }
 }
 
-.colFour{
-    fill:#A1CF6D;
-    stroke:#000000;
-    stroke-width:2;
-    stroke-miterlimit:10;
+.moon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  & img {
+    position: absolute;
+  }
 }
 
-.colFive{
-    fill:none;
-    stroke:#000000;
-    stroke-miterlimit:10;
-}
+.logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
 
-.colSix{
-    opacity:0.15;
-    fill:#00B1DC;
-}
-
-.colSeven{
-    fill:#005BA7;
-}
-
-.colEight{
-    fill:#FFFFFF;
-}
-
-.colNine{
-    fill:#816C5D;
-    stroke:#000000;
-    stroke-width:2;
-    stroke-miterlimit:10;
-}
-
-.colTen{
-    fill:#F5EC43;
-    stroke:#000000;
-    stroke-width:2;
-    stroke-miterlimit:10;}
-
-.colEleven{
-    stroke:#000000;
-    stroke-width:2;
-    stroke-miterlimit:10;
-}
-
-.colTwelve{
-    fill:none;
-    stroke:#FFFFFF;
-    stroke-width:2;
-    stroke-miterlimit:10;
-}
-
-.colThirteen{
-    fill:#FCE0CE;
-    stroke:#000000;
-    stroke-width:2;
-    stroke-miterlimit:10;
-}
-
-.colFourteen{
-    fill:#00B1DC;
-}
-
-.colFifteen{
-    fill:#C77161;
-}
-
-.colSixteen{
-    fill:#AD9282;
-    stroke:#000000;
-    stroke-width:2;
-    stroke-miterlimit:10;
-}
-
-.colSeventeen{
-    fill:#B6A69E;
-    stroke:#000000;
-    stroke-width:2;
-    stroke-miterlimit:10;
-}
-
-.colEighteen{
-    fill:#A1CF6D;
-}
-
-.colNineteen{
-    fill:#FFFFFF;
-    stroke:#000000;
-    stroke-width:2;
-    stroke-miterlimit:10;
-}
-
-.colTwenty{
-    fill:none;
-}
-
-.colTwenty-one{
-    fill:#EAEAE9;
-    stroke:#000000;
-    stroke-width:4.206;
-    stroke-miterlimit:10;
-}
-
-.colTwenty-two{
-    fill:#B4B6B7;
-    stroke:#000000;
-    stroke-width:4.6017;
-    stroke-miterlimit:10;
-}
-
-.colTwenty-three{
-    fill:#C77161;
-}
-
-.colTwenty-four{
-    stroke:#000000;
-    stroke-width:4.206;
-    stroke-miterlimit:10;
+  & img {
+    position: absolute;
+  }
+  &__ntnu {
+    margin-top: 2vw;
+  }
 }
