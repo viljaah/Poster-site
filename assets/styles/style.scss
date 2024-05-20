@@ -9,6 +9,9 @@ body {
   font-size: 20px;
 }
 
+.container {
+  position: relative;
+
 .miljo {
   color: green;
 }
@@ -37,67 +40,6 @@ body {
   font-size: 2.5vw;
 }
 
-/*The small earth patch*/
-.container {
-  position: relative;
-
-  /*css drawing*/
-  &__text {
-    position: absolute;
-    width: 15vw;
-    height: 15vw;
-    border-radius: 100% 45% 62% 58% / 67% 98% 76% 36%;
-    background-color: #a1cf6d;
-    border: 2px solid black;
-    top: 80%;
-    left: 45%;
-  }
-  &__mail {
-    font-size: 2.5vw;
-    margin-left: 1.5vw;
-  }
-}
-
-/*CSS animation, lecture week 12 (lefty) page 67+68*/
-@keyframes moveMoon {
-  0% {
-    transform: translateY(-3vw);
-  }
-  50% {
-    transform: translateY(7vw);
-  }
-  100% {
-    transform: translateY(-3vw);
-  }
-}
-.moon {
-  animation: moveMoon 5s infinite ease-in-out;
-}
-
-/*Colors*/
-.colSeven {
-  fill: #005ba7;
-}
-.colEight {
-  fill: #ffffff;
-}
-.colTen {
-  fill: #f5ec43;
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-.colTwenty {
-  fill: none;
-}
-.colTwenty-three {
-  fill: #c77161;
-}
-.colTwenty-four {
-  stroke: #000000;
-  stroke-width: 4.206;
-  stroke-miterlimit: 10;
-}
 
 .background {
   position: relative;
@@ -180,4 +122,39 @@ body {
   &__ntnu {
     margin-top: 2vw;
   }
+}
+
+
+  /*The small earth patch*/
+  /*css drawing*/
+  &__text {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 100% 45% 62% 58% / 67% 98% 76% 36%;
+    background-color: #a1cf6d;
+    border: 0.3vw solid black;
+    top: 80%;
+    left: 45%;
+  }
+  &__mail {
+    font-size: 2.5vw;
+    margin-left: 1.5vw;
+  }
+}
+
+/*CSS animation, lecture week 12 (lefty) page 67+68*/
+@keyframes moveMoon {
+  0% {
+    transform: translateY(-3vw);
+  }
+  50% {
+    transform: translateY(7vw);
+  }
+  100% {
+    transform: translateY(-3vw);
+  }
+}
+.moon {
+  animation: moveMoon 5s infinite ease-in-out;
 }

@@ -7,27 +7,30 @@ body {
   font-size: 20px;
 }
 
-.miljo {
+.container {
+  position: relative;
+  /*The small earth patch*/
+  /*css drawing*/
+}
+.container .miljo {
   color: green;
 }
-
-.heading {
+.container .heading {
   font-family: sans-serif;
   position: absolute;
   margin-left: 5vw;
   margin-right: 50vw;
 }
-.heading__first {
+.container .heading__first {
   margin-top: 5vw;
   color: #005ba7;
   font-size: 5vw;
 }
-.heading__second {
+.container .heading__second {
   font-family: Caveat;
   font-size: 2.5vw;
 }
-
-.single__paragraph {
+.container .single__paragraph {
   position: absolute;
   margin-left: 5%;
   margin-right: 45%;
@@ -35,11 +38,78 @@ body {
   color: white;
   font-size: 2.5vw;
 }
-
-/*The small earth patch*/
-.container {
+.container .background {
   position: relative;
-  /*css drawing*/
+  width: 100%;
+  height: 100%;
+}
+.container .background img {
+  position: absolute;
+}
+.container .background__red {
+  z-index: -10;
+}
+.container .background__lightblue {
+  z-index: -9;
+}
+.container .background__blue {
+  z-index: -8;
+}
+.container .background__white {
+  z-index: -7;
+}
+.container .earth {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .earth img {
+  position: absolute;
+}
+.container .earth__item1 {
+  z-index: -6;
+}
+.container .earth__item2 {
+  z-index: -5;
+}
+.container .earth__item3 {
+  z-index: -4;
+}
+.container .earth__item4 {
+  z-index: -3;
+}
+.container .earth__item5 {
+  z-index: -2;
+}
+.container .earth__item6 {
+  z-index: -1;
+}
+.container .kids {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .kids img {
+  position: absolute;
+}
+.container .moon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .moon img {
+  position: absolute;
+}
+.container .logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .logo img {
+  position: absolute;
+}
+.container .logo__ntnu {
+  margin-top: 2vw;
 }
 .container__text {
   position: absolute;
@@ -47,7 +117,7 @@ body {
   height: 15vw;
   border-radius: 100% 45% 62% 58%/67% 98% 76% 36%;
   background-color: #a1cf6d;
-  border: 2px solid black;
+  border: 0.3vw solid black;
   top: 80%;
   left: 45%;
 }
@@ -70,112 +140,4 @@ body {
 }
 .moon {
   animation: moveMoon 5s infinite ease-in-out;
-}
-
-/*Colors*/
-.colSeven {
-  fill: #005ba7;
-}
-
-.colEight {
-  fill: #ffffff;
-}
-
-.colTen {
-  fill: #f5ec43;
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-.colTwenty {
-  fill: none;
-}
-
-.colTwenty-three {
-  fill: #c77161;
-}
-
-.colTwenty-four {
-  stroke: #000000;
-  stroke-width: 4.206;
-  stroke-miterlimit: 10;
-}
-
-.background {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.background img {
-  position: absolute;
-}
-.background__red {
-  z-index: -10;
-}
-.background__lightblue {
-  z-index: -9;
-}
-.background__blue {
-  z-index: -8;
-}
-.background__white {
-  z-index: -7;
-}
-
-.earth {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.earth img {
-  position: absolute;
-}
-.earth__item1 {
-  z-index: -6;
-}
-.earth__item2 {
-  z-index: -5;
-}
-.earth__item3 {
-  z-index: -4;
-}
-.earth__item4 {
-  z-index: -3;
-}
-.earth__item5 {
-  z-index: -2;
-}
-.earth__item6 {
-  z-index: -1;
-}
-
-.kids {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.kids img {
-  position: absolute;
-}
-
-.moon {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.moon img {
-  position: absolute;
-}
-
-.logo {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.logo img {
-  position: absolute;
-}
-.logo__ntnu {
-  margin-top: 2vw;
 }/*# sourceMappingURL=style.css.map */
