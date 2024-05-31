@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDG1293-2024 Oblig 2</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="heading">
+        <h1 class="heading__first">
+          Vær en <span class="miljo">miljø</span>detektiv
+        </h1>
+        <p class="heading__second">
+          Se om du kan finne ut hvor stort karbonfotavtrykk du har
+        </p>
+      </div>
+
+      <p class="single__paragraph">
+        Hvis 1,1 billioner brukere bruker tiktok i fem minutter, tilsvarer det:
+      </p>
+
+      <div class="container__text">
+        <p class="container__mail">Slett unna e-poster du ikke trenger</p>
+      </div>
+
+      <div class="background">
+        <img class="background__red" src="img/red-bakgrunn.svg" alt="Background figure of a red wave" />
+        <img class="background__lightblue" src="img/lysblue-bakgrunn.svg" alt="Background figure of a lightblue wave"/>
+        <img class="background__blue" src="img/blue-bakgrunn.svg" alt="Background figure of a blue wave" />
+        <img class="background__white" src="img/hvit-bakgrunn.svg" alt="Background figure of a white wave" />
+      </div>
+
+      <div class="earth">
+        <img class="earth__item1" src="img/earth.svg" alt="Figure of the earth" />
+        <img class="earth__item2" src="img/earth-patch1.svg" alt="Green patch on the earth that looks like land" />
+        <img class="earth__item3" src="img/earth-patch2.svg" alt="Green patch on the earth that looks like land" />
+        <img class="earth__item4" src="img/earth-patch3.svg" alt="Green patch on the earth that looks like land" />
+        <img class="earth__item5" src="img/earth-eye1.svg" alt="An eye on the earth" />
+        <img class="earth__item6" src="img/earth-eye2.svg" alt="An eye on the earth" />
+      </div>
+
+      <div class="kids">
+        <img src="img/kid1.svg" alt="Figure of a kid with a phone in their hand" />
+        <img src="img/kid2.svg" alt="Figure of a kid with a phone in their hand" />
+        <img src="img/kid3.svg" alt="Figure of a kid with a phone in their hand" />
+        <img src="img/parasites.svg" alt="Many small figures of green parasites" />
+      </div>
+
+      <div class="moon">
+        <img class="moon__figure" src="img/moon.svg" alt="Figure of the moon" />
+      </div>
+
+      <div class="logo">
+        <img class="logo__qr" src="img/QR.svg" alt="A square QR code image for scanning" />
+        <img class="logo__ntnu" src="img/ntnu.svg" alt="Image of the NTNU logo" />
+      </div>
+
+      <svg viewBox="0 0 800 1150">
+        <!-- https://www.w3schools.com/graphics/svg_textpath.asp -->
+        <path id="moonline" d="M 40 600 q 100 -250 1400 -100" fill="none" />
+        <text x="50" y="0" style="fill: black; font-size: 30px; font-family: Caveat">
+          <textPath href="#moonline">74 turer til månen og tilbake</textPath>
+        </text>
+
+        <!--Text on the green part of the earth, https://www.w3schools.com/graphics/svg_text.asp
+          cut up the sentences and fixed their placements-->
+        <text y="810" x="670" fill="black">Reduser</text>
+        <text y="830" x="670" fill="black">skjermtiden</text>
+        <text y="850" x="680" fill="black">din og bruk</text>
+        <text y="870" x="700" fill="black">heller mer</text>
+        <text y="890" x="710" fill="black">tid ute.</text>
+        <text y="910" x="710" fill="black">(les en</text>
+        <text y="930" x="710" fill="black">bok, gå</text>
+        <text y="950" x="710" fill="black">ut og</text>
+        <text y="970" x="710" fill="black">lek,</text>
+        <text y="990" x="710" fill="black">gå en tur)</text>
+
+        <!--Text on the green part of the earth-->
+        <text y="1030" x="710" fill="black">Reduser</text>
+        <text y="1050" x="710" fill="black">lysstyrken</text>
+        <text y="1070" x="690" fill="black">på skjermen din</text>
+
+        <!--Text on the green part of the earth-->
+        <text y="790" x="350" fill="black">Koble fra strømmen</text>
+        <text y="810" x="350" fill="black">når du ikke bruker</text>
+        <text y="830" x="400" fill="black">enhetene</text>
+        <text y="850" x="420" fill="black">dine</text>
+
+        <!--Text on the green part of the earth-->
+        <text y="890" x="90" fill="black">Unngå å bytte ut</text>
+        <text y="910" x="90" fill="black">telefonen din ofte</text>
+        <text y="930" x="90" fill="black">(det fører til mye</text>
+        <text y="950" x="90" fill="black">e-avfall)</text>
+        <!--Heading on the earth-->
+        <text y="950" x="500" fill="black" font-size="30">Hva kan du gjøre?</text>
+
+        <!--eye 1 basic animation with SMIL, Introduction to SVGs, slide 57-59-->
+        <ellipse cx="100" cy="1040" rx="30" ry="40" style="fill: white">
+          <animate
+            attributeName="cx"
+            values="230; 270; 230;"
+            dur="2s"
+            repeatCount="indefinite"
+          />
+        </ellipse>
+        <!--eye 1 end-->
+
+        <!--eye 2, basic animation with SMIL, Introduction to SVGs, slide 57-59-->
+        <ellipse
+          cx="580"
+          cy="1065"
+          rx="25"
+          ry="40"
+          style="fill: rgb(255, 255, 255)"
+        >
+          <animate
+            attributeName="cx"
+            values="540; 570; 540;"
+            dur="2s"
+            repeatCount="indefinite"
+          />
+        </ellipse>
+        <!--eye 2 end-->
+
+        <!--Footer-->
+        <rect
+          x="-16.47"
+          y="1074.69"
+          class="footer__white" fill="#ffffff"
+          width="870.85"
+          height="26.98"
+        />
+        <!--Text on the footer-->
+        <text y="1086" x="30" fill="black" style="font-size: 10px">
+          TIKTOK 2.63 gco2e/minutt ht
+          s://www.comparethemarket.com.au/energy/features/social-carbon-foo
+          rint-calculator/ • Vi forutsetter at å kjøre en bil 1.6km (1 mile)
+          genererer 404g CO2
+        </text>
+        <text y="1100" x="30" fill="black" style="font-size: 10px">
+          En tur l månen: 96.5T CO2 (tur/retur: 193T CO2)1.1 ak ve brukere på
+          TIKTOK i 5 min/dag = 148 l månen, eller 74 turer tur/retur. • Avstand
+          Jorden–månen: 384399.861 km
+        </text>
+
+        <rect
+          x="-24.42"
+          y="1101.67"
+          class="footer__blue" fill="#005ba7"
+          width="880.81"
+          height="54.85"
+        />
+        <!--Text on the footer-->
+        <text y="1120" x="490" fill="white" style="font-size: 10px">
+          Last ned plakat:
+        </text>
+        <text y="1130" x="310" fill="white" style="font-size: 10px">
+          https://www.n u.no/web/design/digital-barekra /illustrasjoner
+        </text>
+        <text y="1130" x="630" fill="white" style="font-size: 10px">
+          Kontakt: carlos.vicient@n u.no
+        </text>
+        <!--Footer end-->
+
+        <!--star-->
+        <path
+          id="starRotate"
+          class="star__big" fill="#f5ec43" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+          d="M701.82,141.61c1.35-3.09-0.84-4.44-0.35-10.26c0.16-1.88,0.71-8.38,3.94-9.5c3.5-1.21,8.56,4.4,9.78,5.76
+      c3.98,4.42,4.09,7.69,6.83,8.16c2.15,0.37,2.72-1.53,6.89-2.55c1.66-0.41,6.29-1.54,8.38,0.75c2.27,2.49,0.22,7.57,0.04,7.98
+      c-1.68,4.02-4.5,4.29-4.53,6.84c-0.03,2.48,2.65,2.84,4.53,6.89c1.07,2.28,2.37,6.79,0.41,8.83c-2.19,2.27-7.53,0.53-9.45-0.1
+      c-4.19-1.36-4.92-3.1-6.72-2.6c-2.52,0.7-2.09,4.41-5.45,9.46c-0.57,0.85-5.01,7.55-8.47,6.71c-2.99-0.73-4.32-6.87-4.63-9.83
+      c-0.44-4.21,0.69-6.59-0.76-7.69c-1.34-1.02-2.9,0.57-6.41,0.51c-3.26-0.05-7.7-1.52-8.41-4.11c-0.7-2.59,2.54-5.55,5.29-8.06
+      C697.81,144.19,700.44,144.76,701.82,141.61z"
+        >
+          <!-- lecture week 12 (lefty) page 61+62 -->
+          <!-- animate transform -->
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="0 701.82 141.61"
+            to="360 701.82 141.61"
+            dur="5s"
+            repeatCount="indefinite"
+          />
+        </path>
+
+        <path
+          id="starRotate2"
+          class="star__small" fill="#f5ec43" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+          d="M748.51,224.82c-1.75-1.58-3.12-0.43-6.86-2.03c-1.21-0.52-5.39-2.32-5.41-4.71c-0.03-2.58,4.8-4.69,5.97-5.2
+      c3.8-1.66,5.99-1,6.91-2.72c0.72-1.34-0.41-2.14-0.16-5.12c0.1-1.19,0.37-4.5,2.35-5.38c2.15-0.95,5.05,1.53,5.29,1.73
+      c2.28,2,1.84,3.93,3.52,4.51c1.63,0.57,2.47-1.12,5.56-1.48c1.75-0.2,5.02-0.07,5.93,1.68c1.02,1.95-1.31,5.1-2.15,6.23
+      c-1.83,2.47-3.13,2.57-3.2,3.87c-0.09,1.82,2.45,2.36,5.05,5.69c0.44,0.56,3.88,4.98,2.56,7.08c-1.14,1.82-5.5,1.34-7.52,0.89
+      c-2.88-0.64-4.21-1.91-5.25-1.2c-0.97,0.66-0.26,2.05-1.08,4.35c-0.75,2.14-2.7,4.76-4.57,4.65c-1.87-0.11-3.11-2.91-4.16-5.28
+      C749.33,228.04,750.29,226.42,748.51,224.82z"
+        >
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="0 748.51 224.82"
+            to="360 748.51 224.82"
+            dur="5s"
+            repeatCount="indefinite"
+          />
+        </path>
+        <!--star end-->
+
+        <!--car-->
+        <path id="car" d="M-400,50 Q20,40 80,50" fill="none" />
+        <image href="img/car.svg" width="1000" height="1000">
+          <!-- lecture week 12 (lefty) page 63+64 -->
+          <!-- SMIL path animation -->
+          <animateMotion dur="15s" repeatCount="74" keyPoints="0;1;0" keyTimes="0;0.5;1">
+            <mpath href="#car" />
+          </animateMotion>
+        </image>
+        <!--car end-->
+      </svg>
+    </div>
+  </body>
+</html>

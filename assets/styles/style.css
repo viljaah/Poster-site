@@ -1,0 +1,143 @@
+@font-face {
+  font-family: Caveat;
+  src: url(font/Caveat-Regualar.ttf);
+}
+body {
+  font-family: Caveat;
+  font-size: 20px;
+}
+
+.container {
+  position: relative;
+  /*The small earth patch*/
+  /*css drawing*/
+}
+.container .miljo {
+  color: green;
+}
+.container .heading {
+  font-family: sans-serif;
+  position: absolute;
+  margin-left: 5vw;
+  margin-right: 50vw;
+}
+.container .heading__first {
+  margin-top: 5vw;
+  color: #005ba7;
+  font-size: 5vw;
+}
+.container .heading__second {
+  font-family: Caveat;
+  font-size: 2.5vw;
+}
+.container .single__paragraph {
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 45%;
+  margin-top: 34%;
+  color: white;
+  font-size: 2.5vw;
+}
+.container .background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .background img {
+  position: absolute;
+}
+.container .background__red {
+  z-index: -10;
+}
+.container .background__lightblue {
+  z-index: -9;
+}
+.container .background__blue {
+  z-index: -8;
+}
+.container .background__white {
+  z-index: -7;
+}
+.container .earth {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .earth img {
+  position: absolute;
+}
+.container .earth__item1 {
+  z-index: -6;
+}
+.container .earth__item2 {
+  z-index: -5;
+}
+.container .earth__item3 {
+  z-index: -4;
+}
+.container .earth__item4 {
+  z-index: -3;
+}
+.container .earth__item5 {
+  z-index: -2;
+}
+.container .earth__item6 {
+  z-index: -1;
+}
+.container .kids {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .kids img {
+  position: absolute;
+}
+.container .moon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .moon img {
+  position: absolute;
+}
+.container .logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .logo img {
+  position: absolute;
+}
+.container .logo__ntnu {
+  margin-top: 2vw;
+}
+.container__text {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 100% 45% 62% 58%/67% 98% 76% 36%;
+  background-color: #a1cf6d;
+  border: 0.3vw solid black;
+  top: 80%;
+  left: 45%;
+}
+.container__mail {
+  font-size: 2.5vw;
+  margin-left: 1.5vw;
+}
+
+/*CSS animation, lecture week 12 (lefty) page 67+68*/
+@keyframes moveMoon {
+  0% {
+    transform: translateY(-3vw);
+  }
+  50% {
+    transform: translateY(7vw);
+  }
+  100% {
+    transform: translateY(-3vw);
+  }
+}
+.moon {
+  animation: moveMoon 5s infinite ease-in-out;
+}/*# sourceMappingURL=style.css.map */
